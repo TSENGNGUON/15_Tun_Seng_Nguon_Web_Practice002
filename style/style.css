@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Battambang:wght@100;300;400;700;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+/* Container */
+.container {
+    padding: 0 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+/* Add Task */
+.add-task {
+    width: 50%;
+}
+
+.form-add-task {
+    display: flex;
+    flex-direction: column;
+}
+.form-add-task input {
+    padding-left: 10px; 
+    width: 400px;
+    height: 50px;
+    border-radius: 8px;
+    outline: none;
+    border: 1px solid rgb(161, 160, 160);
+    background-color: rgb(255, 255, 255);
+}
+.form-add-task input::placeholder{
+    padding-left: 10px;
+}
+.form-add-task .priority {
+    width: 400px;
+    height: 50px;
+    border-radius: 8px;
+    outline: none;
+    border: 1px solid rgb(161, 160, 160);
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+}
+.form-add-task label{
+    font-weight: 600;
+    margin: 8px 0;
+}
+/* Task List */
+.task-list {
+    width: 50%;
+    background-color: green;
+}
+/* button */
+.btnAddNewTask {
+    width: 200px;
+    outline: none;
+    border: 1px solid rgb(45, 45, 215);
+    background-color: rgb(45, 45, 215);
+    color: white;
+    border-radius: 15px;
+    font-size: 18px;
+    padding: 10px 15px;
+}
+.btnAddNewTask:hover{
+    background-color: white;
+    color: rgb(45,45,215);
+    outline: none;
+    border: 1px solid rgb(45,45,215);
+}

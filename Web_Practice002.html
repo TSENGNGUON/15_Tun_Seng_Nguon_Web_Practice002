@@ -4,8 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task Managemnet</title>
+    <!-- Link CSS -->
+     <link rel="stylesheet" href="./style/style.css">
+    <!-- Link JS -->
+    <script src="./js/myScript.js"></script>
+    <!-- Link Font Awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
 </head>
 <body>
-    
+    <div class="container">
+        <!-- Add Task -->
+        <div class="add-task">
+            
+            <!-- form -->
+             <form class="form-add-task">
+                <h2>Add Task</h2>
+                <label for="task-name">Task Name</label>
+                <input type="text" id="task-name" placeholder="HRD Homework">
+                <label for="date">Choose Date</label>
+                <input type="date"  id="date" placeholder="Select Date">
+                <label for="priority">Priority</label>
+                <select id="priority" class="priority">
+                    <option value="high">High</option>
+                    <option value="medium">Medium</option>
+                    <option value="low">Low</option>
+                </select>
+                <button class="btnAddNewTask" id="btnAddNewTask">Add New Task</button>
+             </form>
+        </div>
+        <!-- Task Link -->
+        <div class="task-list">
+            <h2>Task List</h2>
+            <table>
+                <tr>
+                    <th>TASK NAME</th>
+                    <th>DUE DATE</th>
+                    <th>PRIORITY</th>
+                    <th>STATUS</th>
+                </tr>
+            </table>
+        </div>
+    </div>
 </body>
 </html>
