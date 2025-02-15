@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
 </head>
 <body>
-    <p id="test"></p>
     <div class="container">
         <!-- Add Task -->
         <div class="add-task">
@@ -38,9 +37,19 @@
         </div>
         <!-- Task Link -->
         <div class="task-list">
-            <h2>Task List</h2>
-            <table class="table" border="1">
-               
+            <h2 class="title-list">Task List</h2>
+            <table class="table" >  
+                <thead>
+                    <tr>
+                        <th>TASK NAME</td>
+                        <th>DUE DATE</td>
+                        <th>PRIORITY </td>
+                        <th>STATUS</td>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+
+                </tbody>
             </table>
         </div>
     </div>

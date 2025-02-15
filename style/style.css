@@ -19,8 +19,12 @@
 .add-task {
     width: 50%;
 }
+.title-list {
+    margin-bottom:35px ;
+}
 
 .form-add-task {
+    padding-left: 100px;
     display: flex;
     flex-direction: column;
 }
@@ -51,21 +55,25 @@
 }
 /* Task List */
 .task-list {
+    height: 378px;
     width: 50%;
-    background-color: rgb(155, 190, 155);
 }
 .table {
     text-align: center;
     border-collapse: collapse;
-    width: 100%;
-    background-color: rgb(220, 221, 221);
+    width: 100%;    
 }
 
-.table tr {
+.table thead tr  {
     padding-left: 50px;
 }
-.table td {
+.table td,
+.table thead tr th {
     padding: 10px 20px;
+}
+
+.table thead{
+    background-color: #F9FAFB;
 }
 .table tr td .pending {
     padding: 5px 10px;
@@ -76,10 +84,11 @@
 
 /* button */
 .btnAddNewTask {
+    text-align: center;
     width: 200px;
     outline: none;
-    border: 1px solid rgb(45, 45, 215);
-    background-color: rgb(45, 45, 215);
+    border: 1px solid #1447E6;
+    background-color: #1447E6;
     color: white;
     border-radius: 15px;
     font-size: 18px;
@@ -87,7 +96,8 @@
 }
 .btnAddNewTask:hover{
     background-color: white;
-    color: rgb(45,45,215);
+    color: #1447E6;
     outline: none;
-    border: 1px solid rgb(45,45,215);
+    font-size: 18px;
+    border: 1px solid #1447E6;
 }
